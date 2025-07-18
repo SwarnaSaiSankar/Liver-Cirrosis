@@ -23,8 +23,8 @@ DentAI Vision is a cutting-edge platform that combines dental healthcare with ar
   - Shadcn UI Components
 
 - **Backend:**
-  - Node.js/Python (API Services)
-  - Machine Learning Models
+  - SpringBoot/Python(API Services)
+  - Machine Learning Model
   - RESTful API Architecture
 
 ## Getting Started
@@ -55,10 +55,7 @@ npm run dev
 
 Create a `.env` file in the root directory:
 
-```env
-VITE_API_URL=your_api_url
-VITE_API_KEY=your_api_key
-```
+
 
 ## Project Structure
 
@@ -86,8 +83,8 @@ dentai-vision-ai-web/
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Example Commit'`)
+4. Push to the branch (`git push origin Main`)
 5. Open a Pull Request
 
 ## License
@@ -97,5 +94,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any queries or support, please contact:
-- Email: [your-email@example.com]
-- Project Link: [https://github.com/yourusername/dentai-vision-ai-web]
+- Email: debeshjha1@gmail.com
+- Project Link: https://github.com/Swarna7414/DentiMap
