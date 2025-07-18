@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
+# DentAI Vision AI Web Application
 
-## Project info
+A modern web application for dental healthcare powered by artificial intelligence and machine learning.
 
-**URL**: https://lovable.dev/projects/b5dccf44-4035-4a04-a75e-40cd3bbe8f15
+## Overview
 
-## How can I edit this code?
+DentAI Vision is a cutting-edge platform that combines dental healthcare with artificial intelligence to provide advanced diagnostic tools and solutions for dental professionals and patients.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- 🦷 AI-powered dental image analysis
+- 💻 Modern, responsive user interface
+- 🔒 Secure authentication system
+- 📊 Real-time diagnostic results
+- 📱 Cross-platform compatibility
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b5dccf44-4035-4a04-a75e-40cd3bbe8f15) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend:**
+  - React.js
+  - TypeScript
+  - Tailwind CSS
+  - Shadcn UI Components
 
-**Use your preferred IDE**
+- **Backend:**
+  - Node.js/Python (API Services)
+  - Machine Learning Models
+  - RESTful API Architecture
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- Node.js (v16 or higher)
+- npm or yarn package manager
+- Git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Installation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/dentai-vision-ai-web.git
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Navigate to project directory
+cd dentai-vision-ai-web
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Environment Variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a `.env` file in the root directory:
 
-**Use GitHub Codespaces**
+```env
+VITE_API_URL=your_api_url
+VITE_API_KEY=your_api_key
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+dentai-vision-ai-web/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/         # Page components
+│   ├── asserts/       # Static assets and images
+│   ├── lib/           # Utility functions
+│   └── app/           # App configuration
+├── public/            # Public assets
+└── package.json       # Project dependencies
+```
 
-This project is built with:
+## Team
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Technical Lead:** Dr. Debesh Jha
+- **Machine Learning Engineer:** Dipika Ranabhat
+- **Full-stack Developer:** Harshith Nalla
+- **Backend & MLOps:** Gaurav Regmi
+- **Frontend & UI:** Neelam Karki
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/b5dccf44-4035-4a04-a75e-40cd3bbe8f15) and click on Share -> Publish.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Contact
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For any queries or support, please contact:
+- Email: [your-email@example.com]
+- Project Link: [https://github.com/yourusername/dentai-vision-ai-web]
