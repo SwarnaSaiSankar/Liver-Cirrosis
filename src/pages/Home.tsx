@@ -41,7 +41,7 @@ const Home = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 text-lg bg-black w-1/3 self-center">
+            <Button variant="outline" size="lg" className="border-white/20 text-white hover:text-black hover:bg-gray-500 px-6 py-4 text-lg bg-black w-1/4 self-center">
               Learn More
             </Button>
           </div>
@@ -51,21 +51,21 @@ const Home = () => {
               <div className="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Scan className="h-8 w-8 text-blue-400" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Real-time Scanning</h3>
+              <h3 className="text-lg font-semibold dark:text-white mb-2">Real-time Scanning</h3>
               <p className="text-sm text-gray-400">Continuous monitoring with advanced microcamera</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Brain className="h-8 w-8 text-purple-400" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">AI Analysis</h3>
+              <h3 className="text-lg font-semibold dark:text-white mb-2">AI Analysis</h3>
               <p className="text-sm text-gray-400">Deep learning powered diagnostics</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-green-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Zap className="h-8 w-8 text-green-400" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Instant Results</h3>
+              <h3 className="text-lg font-semibold dark:text-white mb-2">Instant Results</h3>
               <p className="text-sm text-gray-400">Get immediate diagnostic feedback</p>
             </div>
           </div>
