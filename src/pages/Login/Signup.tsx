@@ -163,7 +163,7 @@ const SignupPage = () => {
           </button>
         </form>
         <p className="text-center">
-          Already have an account? Please <span className="text-blue-600 hover:text-blue-700 hover:cursor-pointer font-semibold" onClick={()=> navigate('/login')}>Log in</span>
+          Already have an account? Please <span className="text-blue-600 hover:text-blue-700 cursor-pointer font-semibold" onClick={()=> navigate('/login')}>Log in</span>
         </p>
       </div>
     </div>

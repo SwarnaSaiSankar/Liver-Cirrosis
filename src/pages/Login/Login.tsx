@@ -66,7 +66,7 @@ const LoginPage = () => {
 
             
             <div className="flex items-center justify-end text-sm">
-              <button className="font-semibold hover:text-blue-700 transition-all duration-300">
+              <button className="font-semibold text-blue-500 hover:text-blue-700 transition-all duration-300">
                 Forgot password ?
               </button>
             </div>
@@ -101,7 +101,7 @@ const LoginPage = () => {
             
             <p className="text-center text-sm text-gray-600">
               Don’t have an account?{"  "}
-              <span className=" font-semibold hover:cursor-pointer text-blue-600 hover:text-blue-800 transition-all duration-300" onClick={()=>{navigate("/signup")}}>
+              <span className=" font-semibold hover:cursor-pointer text-blue-500 hover:text-blue-600 transition-all duration-300" onClick={()=>{navigate("/signup")}}>
                 Sign up
               </span>
             </p>

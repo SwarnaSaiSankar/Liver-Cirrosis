@@ -1,21 +1,31 @@
 
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Target, Twitter } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Swarnaone from "../asserts/about/swarnaone.png"
 import TechinalLead from "../asserts/about/Leadimage.png"
 import harshith from "../asserts/about/Harshith.png";
-
-import Dipika from "../asserts/about/Dipika.png";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
+
+  const Dgithub=()=>{
+    window.open("https://github.com/DebeshJha","_blank");
+  }
+
+  const Dlinkedin=()=>{
+    window.open("https://www.linkedin.com/in/debesh-jha-ph-d-071462aa/","_blank");
+  }
+
+  const Dtwitter=()=>{
+    window.open("https://x.com/debesh_jha","_blank")
+  }
   const teamMembers = [
 
     {
       name: "Sai Sankar Swarna",
-      role: "Back-end, API design & MLOps",
+      role: "Back-end, API design & Orchestration",
       image:Swarnaone,
-      description: "Manages backend services, API development, and MLOps workflow.",
+      description: "Manages backend services, API development, and model workflow.",
       social: {
         github: "https://github.com/Swarna7414",
         linkedin: "https://www.linkedin.com/in/swanra-sai-sankar-000797191/",
@@ -26,11 +36,10 @@ const About = () => {
       name: "Harshith Nalla",
       role: "Frontend & UI",
       image: harshith,
-      description: "Builds responsive UI and user-friendly interfaces using React and Tailwind for DentiMap.",
+      description: "Builds responsive UI and user-friendly interfaces using React and Tailwind.",
       social: {
-        github: "#",
-        linkedin: "#",
-        twitter: "#"
+        github: "https://github.com/HarshithReddy01",
+        linkedin: "https://www.linkedin.com/in/harshith-reddy-nalla-6005012ab/",
       }
     },
   ];
@@ -41,7 +50,7 @@ const About = () => {
       <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-white to-white dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Meet Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Team</span>
+            Meet Our <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">Team</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Passionate innovators dedicated to revolutionizing dental care through artificial intelligence and cutting-edge technology.
@@ -67,11 +76,14 @@ const About = () => {
                     
                     {/* Social Media Icons */}
                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Button size="icon" variant="secondary" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30">
-                        <Github className="h-4 w-4 text-white" />
+                      <Button size="icon" variant="secondary" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={Dgithub}>
+                        <Github className="h-4 w-4 text-blue-500" />
                       </Button>
-                      <Button size="icon" variant="secondary" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30">
-                        <Linkedin className="h-4 w-4 text-white" />
+                      <Button size="icon" variant="secondary" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={Dlinkedin}>
+                        <Linkedin className="h-4 w-4 text-blue-500" />
+                      </Button>
+                      <Button size="icon" variant="secondary" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={Dtwitter}>
+                        <Twitter className="h-4 w-4 text-blue-500" />
                       </Button>
                     </div>
                   </div>
@@ -100,10 +112,10 @@ const About = () => {
                         
                         {/* Social Media Icons */}
                         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <Button size="icon" variant="secondary" className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30">
+                          <Button size="icon" variant="secondary" className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={()=>{window.open(member.social.github)}}>
                             <Github className="h-3 w-3 text-white" />
                           </Button>
-                          <Button size="icon" variant="secondary" className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30">
+                          <Button size="icon" variant="secondary" className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={()=>{window.open(member.social.linkedin)}}>
                             <Linkedin className="h-3 w-3 text-white" />
                           </Button>
                         </div>
@@ -137,7 +149,7 @@ const About = () => {
       {/* Mission Section */}
       <div className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Mission</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Our <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">Mission</span></h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-12">
             At DentiMap, we're committed to transforming dental healthcare through innovative AI technology. 
             Our mission is to make advanced dental diagnostics accessible, accurate, and immediate for everyone. 
@@ -150,7 +162,6 @@ const About = () => {
       {/* Values Section */}
       <div className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Values</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6">

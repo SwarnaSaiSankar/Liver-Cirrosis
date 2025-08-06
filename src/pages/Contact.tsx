@@ -61,7 +61,7 @@ const Contact = () => {
         <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-white to-white dark:from-black dark:via-black dark:to-black">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Get in <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Touch</span>
+              Get in <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Have questions about DentiMap? We're here to help. Reach out to our team for support, 
@@ -108,11 +108,11 @@ const Contact = () => {
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-sm">Phone Support</span>
-                        <span className="text-sm font-semibold text-green-600">24/7</span>
+                        <span className="text-sm font-semibold text-purple-600">10:00 am - 4:00 pm</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-sm">AI Chat</span>
-                        <span className="text-sm font-semibold text-purple-600">Instant</span>
+                        <span className="text-sm font-semibold text-green-600">Instant</span>
                       </div>
                     </div>
                   </CardContent>
@@ -188,7 +188,7 @@ const Contact = () => {
                       <Button 
                         type="submit" 
                         size="lg" 
-                        className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white h-12 text-lg"
+                        className="w-full bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 text-white h-12 text-lg"
                       >
                         <Send className="mr-2 h-5 w-5" />
                         Send Message
