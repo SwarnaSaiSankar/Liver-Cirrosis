@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./components/ThemeProvider";
 import Navbar from "./components/Navbar";
+import Bounce from "../src/asserts/bounce.png"
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
@@ -32,6 +33,15 @@ const App = () => (
               <Route path="/login" element={<LoginPage/>}/>
               <Route path="/signup" element={<SignupPage/>}/>
             </Routes>
+            <div className="bottom-8 right-5 transform -translate-x-1/2 fixed hidden lg:block">
+              <div className="animate-bounce">
+                <img 
+                  src={Bounce}
+                  alt="Animated Tooth" 
+                  className="w-12 h-12 animate-pulse"
+                />
+              </div>
+            </div>
           </div>
         </BrowserRouter>
       </TooltipProvider>

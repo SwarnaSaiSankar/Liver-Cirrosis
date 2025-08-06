@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient only ra bacha */}
-      <div className="absolute inset-0 bg-white dark:black dark:from-black dark:via-black dark:to-black">
+      <div className="absolute inset-0 bg-white dark:black dark:from-blue-200 dark:via-blue-500 dark:to-blue-500">
         <div className="absolute inset-0 dark:bg-gradient-to-r dark:from-black dark:to-black" />
       </div>
 
@@ -72,16 +72,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Animated Tooth */}
-      <div className="bottom-8 left-1/2 transform -translate-x-1/2 absolute hidden lg:block">
-        <div className="animate-bounce">
-          <img 
-            src={Bounce}
-            alt="Animated Tooth" 
-            className="w-12 h-12 animate-pulse"
-          />
-        </div>
-      </div>
     </div>
   );
 };
