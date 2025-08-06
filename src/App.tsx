@@ -33,7 +33,7 @@ const App = () => (
               <Route path="/login" element={<LoginPage/>}/>
               <Route path="/signup" element={<SignupPage/>}/>
             </Routes>
-            <div className="bottom-8 right-5 transform -translate-x-1/2 fixed hidden lg:block">
+            <div className="bottom-8 right-5 transform -translate-x-1/2 fixed hidden lg:block cursor-pointer">
               <div className="animate-bounce">
                 <img 
                   src={Bounce}
