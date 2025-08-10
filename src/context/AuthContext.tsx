@@ -35,18 +35,46 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    
-    const storedUser = localStorage.getItem('user');
-    if (storedUser) {
+    const checkAuthStatus = async () => {
       try {
-        const userData = JSON.parse(storedUser);
-        setUser(userData);
+        const response = await fetch('http://localhost:8080/api/auth/check-auth', {
+          method: 'GET',
+          credentials: 'include'
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          if (data.success && data.data) {
+            setUser(data.data);
+            localStorage.setItem('user', JSON.stringify(data.data));
+          } else {
+            
+            setUser(null);
+            localStorage.removeItem('user');
+          }
+        } else {
+          
+          setUser(null);
+          localStorage.removeItem('user');
+        }
       } catch (error) {
-        console.error('Error parsing stored user data:', error);
-        localStorage.removeItem('user');
+        console.error('Auth check error:', error);
+        
+        const storedUser = localStorage.getItem('user');
+        if (storedUser) {
+          try {
+            const userData = JSON.parse(storedUser);
+            setUser(userData);
+          } catch (error) {
+            console.error('Error parsing stored user data:', error);
+            localStorage.removeItem('user');
+          }
+        }
       }
-    }
-    setLoading(false);
+      setLoading(false);
+    };
+
+    checkAuthStatus();
   }, []);
 
   const login = (userData: User) => {
