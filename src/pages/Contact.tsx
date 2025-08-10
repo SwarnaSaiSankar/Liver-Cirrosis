@@ -57,7 +57,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <div className="pt-16">
-        {/* Hero Section */}
+        
         <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-white to-white dark:from-black dark:via-black dark:to-black">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -73,7 +73,7 @@ const Contact = () => {
         <div className="py-5 px-4 sm:px-6 lg:px-8 dark:bg-black">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-3 gap-12">
-              {/* Contact Information */}
+              
               <div className="lg:col-span-1 space-y-8">
                 <div>
                   <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
@@ -92,7 +92,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Quick Stats */}
+                
                 <Card className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 border-0">
                   <CardHeader>
                     <CardTitle className="flex items-center space-x-2">
@@ -119,7 +119,7 @@ const Contact = () => {
                 </Card>
               </div>
 
-              {/* Contact Form */}
+              
               <div className="lg:col-span-2">
                 <Card className="border-0 shadow-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
                   <CardHeader>

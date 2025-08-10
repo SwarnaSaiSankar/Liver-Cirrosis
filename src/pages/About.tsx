@@ -24,6 +24,7 @@ const About = () => {
     {
       name: "Sai Sankar Swarna",
       role: "Back-end, API design & Orchestration",
+      college:"Graduate Student",
       image:Swarnaone,
       description: "Manages backend services, API development, and model workflow.",
       social: {
@@ -33,10 +34,11 @@ const About = () => {
     }
     ,
     {
-      name: "Harshith Nalla",
-      role: "Frontend & UI",
+      name: "Harshith Reddy Nalla",
+      role: "Full Stack Developer",
+      college:"Undergraduate Student",
       image: harshith,
-      description: "Builds responsive UI and user-friendly interfaces using React and Tailwind.",
+      description: "Built responsive UIs with React & Tailwind; developed backend with Spring Boot.",
       social: {
         github: "https://github.com/HarshithReddy01",
         linkedin: "https://www.linkedin.com/in/harshith-reddy-nalla-6005012ab/",
@@ -46,7 +48,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen pt-16 bg-background">
-      {/* Hero Section */}
+      
       <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-white to-white dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -58,11 +60,11 @@ const About = () => {
         </div>
       </div>
 
-      {/* Team Grid - Updated Layout */}
+      
       <div className="py-15 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900/20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-8">
-            {/* Large card for Technical Lead */}
+            
             <div className="lg:col-span-6">
               <Card className="flex flex-col justify-between group hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm h-full">
                 <CardContent className="p-0">
@@ -74,7 +76,7 @@ const About = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     
-                    {/* Social Media Icons */}
+                    
                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <Button size="icon" variant="secondary" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={Dgithub}>
                         <Github className="h-4 w-4 text-blue-500" />
@@ -96,7 +98,7 @@ const About = () => {
               </Card>
             </div>
 
-            {/* 2x2 grid for remaining 4 team members */}
+            
             <div className="lg:col-span-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-1/2">
                 {teamMembers.map((member, index) => (
@@ -110,7 +112,7 @@ const About = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         
-                        {/* Social Media Icons */}
+                        
                         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           <Button size="icon" variant="secondary" className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={()=>{window.open(member.social.github)}}>
                             <Github className="h-3 w-3 text-white" />
@@ -124,7 +126,7 @@ const About = () => {
                       <div className="p-4">
                         <h3 className="text-lg font-bold mb-1">{member.name}</h3>
                         <p className="text-primary font-medium mb-2 text-sm">{member.role}</p>
-                        <p className="text-xs text-muted-foreground leading-relaxed">Gradute Student ,</p>
+                        <p className="text-xs text-muted-foreground leading-relaxed">{member.college},</p>
                         <p className="text-xs text-muted-foreground leading-relaxed">{member.description}</p>
                       </div>
                     </CardContent>
@@ -134,10 +136,10 @@ const About = () => {
 
               <div className="hidden lg:block mt-20">
                 <h1 className="font-bold text-4xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Who are we ?</h1>
-                {/** here */}
-                <p className="text-justify font-semibold text-md mt-6">We’re graduate students at the University of South Dakota who created this website to make helpful technology freely accessible to everyone. 
+                
+                <p className="text-justify font-semibold text-md mt-6">We’re students at the University of South Dakota who created this website to make helpful technology freely accessible to everyone. 
                   Our goal is to improve AI in healthcare by building practical, research-driven tools. By combining our technical skills with insights from the 
-                  medical field, we aim to develop solutions that support doctors, researchers, and patients alike — making advanced technology more human-centered 
+                  medical field, we aim to develop solutions that support doctors, researchers, and patients alike,  making advanced technology more human-centered 
                   and accessible.</p>
               </div>
 
@@ -146,7 +148,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Mission Section */}
+      
       <div className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Our <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">Mission</span></h2>
@@ -159,7 +161,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Values Section */}
+      
       <div className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
