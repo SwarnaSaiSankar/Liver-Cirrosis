@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background gradient only ra bacha */}
+      
       <div className="absolute inset-0 bg-white dark:black dark:from-blue-200 dark:via-blue-500 dark:to-blue-500">
         <div className="absolute inset-0 dark:bg-gradient-to-r dark:from-black dark:to-black" />
       </div>
@@ -22,7 +22,7 @@ const Home = () => {
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="block bg-gradient-to-r dark:text-blue-600 text-blue-500 bg-clip-text">
+              <span className="block bg-gradient-to-r dark:text-white text-blue-500 bg-clip-text">
                 DentiMap
               </span>
             </h1>
@@ -41,9 +41,16 @@ const Home = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button variant="outline" size="lg" className="border-white/20 text-white hover:text-black hover:bg-gray-500 px-6 py-4 text-lg bg-black w-1/4 self-center">
-              Learn More
-            </Button>
+            <Link to="/learn-more">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-2 border-white/30 text-white hover:text-black hover:bg-white hover:border-white px-8 py-4 text-lg bg-transparent backdrop-blur-sm transition-all duration-300"
+              >
+                Learn More
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto">

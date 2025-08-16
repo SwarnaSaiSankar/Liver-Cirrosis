@@ -38,7 +38,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ isOpen, setIsOpen }) => {
     if (isAuthenticated && messages.length === 0) {
       setMessages([{
         id: '1',
-        content: `Hello ${user?.firstName || 'there'}! I'm Denti Jha, your dental health assistant. I'm here to help you with dental health questions, provide guidance on oral care, and answer any concerns you might have. How can I assist you today? 🦷`,
+        content: `Hello ${user?.firstName || 'there'} , I'm Denti Jha, your dental health assistant. I'm here to help you with dental health questions, provide guidance on oral care, and answer any concerns you might have. How can I assist you today?`,
         role: 'assistant',
         timestamp: new Date()
       }]);
@@ -224,7 +224,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ isOpen, setIsOpen }) => {
                       "w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0",
                       message.role === 'user' 
                         ? 'bg-blue-500' 
-                        : 'bg-gradient-to-r from-green-400 to-blue-500'
+                        : 'bg-gradient-to-r bg-transparent'
                     )}>
                       {message.role === 'user' ? (
                         <User className="h-4 w-4 text-white" />
