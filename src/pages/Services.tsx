@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-16 bg-background">
       
-      <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
+      <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-white to-white dark:from-black dark:via-black dark:to-black">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Our <span className="bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">AI Services</span>
@@ -78,7 +78,7 @@ const Services = () => {
       </div>
 
       
-      <div className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
+      <div className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900/20">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

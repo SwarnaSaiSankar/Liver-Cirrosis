@@ -6,10 +6,11 @@ const Home = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       
-      <div className="absolute inset-0 bg-white dark:bg-black">
+      <div className="absolute inset-0 bg-white dark:black dark:from-blue-200 dark:via-blue-500 dark:to-blue-500">
+        <div className="absolute inset-0 dark:bg-gradient-to-r dark:from-black dark:to-black" />
       </div>
 
-      {/* Animated background elements ra pilla bacha nayala*/}
+      {/* Animated background elements ra pilla bacha */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
