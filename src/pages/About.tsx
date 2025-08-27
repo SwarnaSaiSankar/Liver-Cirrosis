@@ -49,7 +49,7 @@ const About = () => {
   return (
     <div className="min-h-screen pt-16 bg-background">
       
-      <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-white to-white dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20">
+      <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-white to-white dark:from-black dark:via-black dark:to-black">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Meet Our <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">Team</span>
@@ -61,12 +61,12 @@ const About = () => {
       </div>
 
       
-      <div className="py-15 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900/20">
+      <div className="py-15 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-white to-white dark:from-black dark:to-black">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-8">
             
             <div className="lg:col-span-6">
-              <Card className="flex flex-col justify-between group hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm h-full">
+              <Card className="flex flex-col justify-between group hover:shadow-2xl transition-all duration-500 border-0 bg-card/80 backdrop-blur-sm h-full">
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden rounded-md">
                     <img
@@ -102,7 +102,7 @@ const About = () => {
             <div className="lg:col-span-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-1/2">
                 {teamMembers.map((member, index) => (
-                  <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm mt-6 mb-6">
+                  <Card key={index} className="group hover:shadow-2xl transition-all duration-500 border-0 bg-card/80 backdrop-blur-sm mt-6 mb-6">
                     <CardContent className="p-0">
                       <div className="relative overflow-hidden rounded-md">
                         <img

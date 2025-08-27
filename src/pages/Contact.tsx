@@ -70,7 +70,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="py-5 px-4 sm:px-6 lg:px-8 dark:bg-black">
+        <div className="py-5 px-4 sm:px-6 lg:px-8 bg-background dark:bg-black">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-3 gap-12">
               
@@ -121,7 +121,7 @@ const Contact = () => {
 
               
               <div className="lg:col-span-2">
-                <Card className="border-0 shadow-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
+                <Card className="border-0 shadow-2xl bg-card/80 backdrop-blur-sm">
                   <CardHeader>
                     <CardTitle className="text-2xl flex items-center space-x-2">
                       <MessageCircle className="h-6 w-6 text-blue-600" />

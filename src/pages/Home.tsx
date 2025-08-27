@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       
-      <div className="absolute inset-0 bg-white dark:black dark:from-blue-200 dark:via-blue-500 dark:to-blue-500">
-        <div className="absolute inset-0 dark:bg-gradient-to-r dark:from-black dark:to-black" />
+      <div className="absolute inset-0 bg-background">
+        <div className="absolute inset-0" />
       </div>
 
       {/* Animated background elements ra pilla bacha */}

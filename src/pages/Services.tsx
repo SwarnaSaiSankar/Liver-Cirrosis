@@ -45,7 +45,7 @@ const Services = () => {
       </div>
 
       
-      <div className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-black">
+              <div className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -78,7 +78,7 @@ const Services = () => {
       </div>
 
       
-      <div className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900/20">
+      <div className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-white to-white dark:from-black dark:to-black">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
