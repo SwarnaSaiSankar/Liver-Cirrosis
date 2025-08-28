@@ -1,5 +1,9 @@
-
-import { Github, Linkedin, Target, Twitter } from "lucide-react";
+import { FiGithub } from "react-icons/fi";
+import { FiLinkedin } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
+import { TbBulb } from "react-icons/tb";
+import { FaHeartCircleCheck } from "react-icons/fa6";
+import { TbStarFilled } from "react-icons/tb";
 import { Card, CardContent } from "@/components/ui/card";
 import Swarnaone from "../asserts/about/swarnaone.png"
 import TechinalLead from "../asserts/about/Leadimage.png"
@@ -79,13 +83,13 @@ const About = () => {
                     
                     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <Button size="icon" variant="secondary" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={Dgithub}>
-                        <Github className="h-4 w-4 text-blue-500" />
+                        <FiGithub className="h-4 w-4 text-blue-500" />
                       </Button>
                       <Button size="icon" variant="secondary" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={Dlinkedin}>
-                        <Linkedin className="h-4 w-4 text-blue-500" />
+                        <FiLinkedin className="h-4 w-4 text-blue-500" />
                       </Button>
                       <Button size="icon" variant="secondary" className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={Dtwitter}>
-                        <Twitter className="h-4 w-4 text-blue-500" />
+                        <FaXTwitter className="h-4 w-4 text-blue-500" />
                       </Button>
                     </div>
                   </div>
@@ -115,10 +119,10 @@ const About = () => {
                         
                         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           <Button size="icon" variant="secondary" className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={()=>{window.open(member.social.github)}}>
-                            <Github className="h-3 w-3 text-white" />
+                            <FiGithub className="h-3 w-3 text-white" />
                           </Button>
                           <Button size="icon" variant="secondary" className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30" onClick={()=>{window.open(member.social.linkedin)}}>
-                            <Linkedin className="h-3 w-3 text-white" />
+                            <FiLinkedin className="h-3 w-3 text-white" />
                           </Button>
                         </div>
                       </div>
@@ -167,7 +171,7 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-white">AI</span>
+                <span className="text-2xl font-bold text-white"><TbBulb size={36}/></span>
               </div>
               <h3 className="text-xl font-bold mb-4">Innovation First</h3>
               <p className="text-muted-foreground">
@@ -176,7 +180,7 @@ const About = () => {
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-white">❤️</span>
+                <span className="text-2xl font-bold text-white"><FaHeartCircleCheck/></span>
               </div>
               <h3 className="text-xl font-bold mb-4">Patient-Centered</h3>
               <p className="text-muted-foreground">
@@ -185,7 +189,7 @@ const About = () => {
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-white">🌟</span>
+                <span className="text-2xl font-bold text-white"><TbStarFilled/></span>
               </div>
               <h3 className="text-xl font-bold mb-4">Excellence</h3>
               <p className="text-muted-foreground">
