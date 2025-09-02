@@ -68,7 +68,7 @@ VITE_DEEPINFRA_API_URL=https://api.deepinfra.com/v1/openai/chat/completions
 VITE_DEEPINFRA_MODEL=meta-llama/Meta-Llama-3-8B-Instruct
 
 # Backend API Configuration (optional)
-VITE_BACKEND_API_URL=http://localhost:8080
+VITE_BACKEND_API_URL=https://map.paninsight.org
 ```
 
 
