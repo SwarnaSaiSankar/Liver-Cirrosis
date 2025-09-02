@@ -91,7 +91,7 @@ const App = () => {
           <TooltipProvider>
             <Toaster />
             <Sonner />
-            <BrowserRouter basename={import.meta.env.MODE === 'production' ? '/' : '/DentiMap'}>
+            <BrowserRouter basename="/DentiMap">
               <AppContent />
             </BrowserRouter>
           </TooltipProvider>
