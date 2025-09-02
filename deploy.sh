@@ -7,7 +7,7 @@ echo "🚀 Starting DentiMap GitHub Pages Deployment..."
 echo "📦 Building production bundle..."
 npm run build
 
-# Check if build was successful
+
 if [ $? -eq 0 ]; then
     echo "✅ Build successful!"
     echo "📁 Production files are in the 'dist' folder"
