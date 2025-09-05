@@ -1,6 +1,6 @@
 # DentAI Vision AI Web Application
 
-A modern web application for dental healthcare powered by artificial intelligence and machine learning.
+A modern web solution using AI and machine learning to make dental healthcare smarter, faster, and more accessible.
 
 ## Overview
 
