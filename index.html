@@ -6,7 +6,16 @@
     <title>Liver Cirrosis</title>
     <meta name="description" content="Created By Swarna" />
     <meta name="author" content="Lovable" />
-    <link rel="icon" type="image/png" href="/public/logo.png">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
 
   <body>
