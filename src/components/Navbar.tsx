@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Sun, Moon, User, LogOut } from "lucide-react";
@@ -17,7 +16,6 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
     { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -34,10 +32,10 @@ const Navbar = () => {
             <img 
               src={Logo}
               alt="DentiMap Logo" 
-              className="h-6 w-6 mt-0.5"
+              className="h-12 w-15 mt-0.5"
             />
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              DentiMap
+              Liver Cirrosis
             </span>
           </Link>
 

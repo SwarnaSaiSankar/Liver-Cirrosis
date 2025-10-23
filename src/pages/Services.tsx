@@ -1,11 +1,10 @@
-import { FaVideo } from "react-icons/fa";
-import { FiUpload } from "react-icons/fi";
+import { BsUpload } from "react-icons/bs";
 import { CiChat1 } from "react-icons/ci";
-import { LuBrainCircuit } from "react-icons/lu";
-import { IoSync } from "react-icons/io5";
-import { LuSearchCheck } from "react-icons/lu";
-import { IoIosCamera } from "react-icons/io";
-import Test from "../asserts/Test.png";
+import { RiCpuLine } from "react-icons/ri";
+import { BiGitMerge } from "react-icons/bi";
+import { FiRefreshCcw } from "react-icons/fi";
+import { MdInsights } from "react-icons/md";
+import Test from "../asserts/SlidingImages/Test.png";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -13,18 +12,11 @@ import { Button } from "@/components/ui/button";
 const Services = () => {
   const services = [
     {
-      icon: FaVideo,
-      title: "Live AI Model",
-      description: "Real-time dental analysis using advanced microcamera technology connected to our AI system.",
-      features: ["Continuous monitoring", "Instant diagnosis", "Real-time alerts"],
-      gradient: "from-blue-500 to-cyan-500"
-    },
-    {
-      icon: FiUpload,
+      icon: BsUpload,
       title: "Upload & Analyze",
       description: "Upload your dental scans and get comprehensive AI-powered analysis and diagnosis.",
-      features: ["High-accuracy scanning", "Detailed reports", "Multiple format support", "Quick results"],
-      gradient: "from-purple-500 to-pink-500"
+      features: ["High-accuracy scanning", "Multiple format support", "Quick results"],
+      gradient: "from-blue-500 to-cyan-500"
     },
     {
       icon: CiChat1,
@@ -38,19 +30,55 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-16 bg-background">
       
-      <div className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-white to-white dark:from-black dark:via-black dark:to-black">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Our <span className="bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">AI Services</span>
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Experience the future of dental care with our cutting-edge AI-powered services designed to revolutionize dental diagnostics and patient care.
-          </p>
+      <div className="min-h-screen pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-white to-white dark:from-black dark:to-black">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden">
+                <img 
+                  src={Test}
+                  alt="AI Technology in Action"
+                  className="w-full h-[500px] object-cover hidden md:block"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <h3 className="text-xl font-bold mb-2">Smart Liver Diagnostics</h3>
+                  <p className="text-gray-200">Harnessing transformer-based AI models to achieve real-time, high-accuracy liver segmentation from CT scans.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Driven by<span className="text-blue-600"> Medical Imaging</span>
+              </h2>
+              <div className="grid grid-cols-2 gap-6 mt-32">
+                <div className="text-center">
+                  <RiCpuLine className="h-12 w-12 text-blue-600 mx-auto mb-3" />
+                  <h3 className="font-semibold mb-2">PVT-Based Encoding</h3>
+                  <p className="text-sm text-muted-foreground">Pretrained Pyramid Vision Transformer for Hierarchical Feature Extraction</p>
+                </div>
+                <div className="text-center">
+                  <BiGitMerge className="h-12 w-12 text-purple-600 mx-auto mb-3" />
+                  <h3 className="font-semibold mb-2">Refined Decoding</h3>
+                  <p className="text-sm text-muted-foreground">Hierarchical Multi-scale Fusion</p>
+                </div>
+                <div className="text-center">
+                  <FiRefreshCcw className="h-12 w-12 text-green-600 mx-auto mb-3" />
+                  <h3 className="font-semibold mb-2">Residual Learning</h3>
+                  <p className="text-sm text-muted-foreground">Enhanced Feature Representation</p>
+                </div>
+                <div className="text-center">
+                  <MdInsights className="h-12 w-12 text-orange-600 mx-auto mb-3" />
+                  <h3 className="font-semibold mb-2">Proven Clinical Accuracy</h3>
+                  <p className="text-sm text-muted-foreground">Benchmark-Tested Performance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      
-              <div className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <div className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -78,59 +106,6 @@ const Services = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </div>
-
-      
-      <div className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-white to-white dark:from-black dark:to-black">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Powered by Advanced <span className="text-blue-600">AI Technology</span>
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Our DentiMap system leverages state-of-the-art machine learning algorithms and computer vision 
-                to provide accurate, real-time dental diagnostics.
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <LuBrainCircuit className="h-12 w-12 text-blue-600 mx-auto mb-3" />
-                  <h3 className="font-semibold mb-2">Deep Learning</h3>
-                  <p className="text-sm text-muted-foreground">Advanced neural networks for pattern recognition</p>
-                </div>
-                <div className="text-center">
-                  <IoSync className="h-12 w-12 text-purple-600 mx-auto mb-3" />
-                  <h3 className="font-semibold mb-2">Real-time Processing</h3>
-                  <p className="text-sm text-muted-foreground">Instant analysis and immediate results</p>
-                </div>
-                <div className="text-center">
-                  <LuSearchCheck className="h-12 w-12 text-green-600 mx-auto mb-3" />
-                  <h3 className="font-semibold mb-2"> Smart Detection</h3>
-                  <p className="text-sm text-muted-foreground">Trained to detect early signs of dental disease</p>
-                </div>
-                <div className="text-center">
-                  <IoIosCamera className="h-12 w-12 text-orange-600 mx-auto mb-3" />
-                  <h3 className="font-semibold mb-2">HD Imaging</h3>
-                  <p className="text-sm text-muted-foreground">Crystal clear microcamera technology</p>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden">
-                <img 
-                  src={Test}
-                  alt="AI Technology in Action"
-                  className="w-full h-[500px] object-cover hidden md:block"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <h3 className="text-xl font-bold mb-2">Precision Dental Diagnostics</h3>
-                  <p className="text-gray-200">Experience cutting-edge dental care through AI-enhanced imaging and expert analysis for early and accurate detection of oral health issues.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

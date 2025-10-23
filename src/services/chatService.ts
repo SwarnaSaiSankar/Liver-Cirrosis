@@ -90,7 +90,7 @@ class ChatService {
   // Get a welcome message for new users
   getWelcomeMessage(userName?: string): ChatResponse {
     return {
-      message: `Hello ${userName || 'there'}! I'm Denti Jha, your dental health assistant. I'm here to help you with dental health questions, provide guidance on oral care, and answer any concerns you might have. How can I assist you today?`,
+      message: `Hello ${userName || 'there'}! I'm Jha, your AI Liver Diagnostic Assistant. I analyze liver scan data, help identify potential signs of cirrhosis, and provide insights to support better liver health. What would you like to know today?`,
       role: 'assistant',
       timestamp: new Date(),
       isStreaming: false
@@ -100,7 +100,7 @@ class ChatService {
   
   getHelpMessage(): ChatResponse {
     return {
-      message: "I can help you with:\n• Dental hygiene tips\n• Common dental problems\n• Oral care recommendations\n• General dental health questions\n\nJust ask me anything about dental health!",
+      message: "I can help you with:\n• Liver health tips\n• Early signs of liver diseases\n• Cirrhosis prevention and management\n• Understanding your liver scan results\n\nJust ask me anything about liver health or diagnostics!",
       role: 'assistant',
       timestamp: new Date(),
       isStreaming: false
